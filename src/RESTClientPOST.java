@@ -52,6 +52,7 @@ public class RESTClientPOST {
 			Gson gson = new Gson();
 			String input = gson.toJson(empl);
 			StringBuilder strBu = new StringBuilder(input);
+			//TODO remove this
 			strBu.insert(0, "{\n" + "\"EMPLOYEES\": {\n" + "\"LIST\": [");
 			strBu.append("]\n" + "}\n" + "}");
 
